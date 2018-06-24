@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animal List App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="origin" class="primary">Origin</label>
+          <input type="text" id="origin" required/>
+        </div>
+
+        <div class="form-item">
+          <div>
+    <input type="radio" id="familyChoice1"
+     name="family" value="mammal" checked>
+    <label for="familyChoice1">Mammal</label>
+
+    <input type="radio" id="familyChoice2"
+     name="family" value="bird">
+    <label for="familyChoice2">Bird</label>
+
+    <input type="radio" id="familyChoice3"
+     name="family" value="fish">
+    <label for="familyChoice3">Fish</label>
+
+    <input type="radio" id="familyChoice4"
+     name="family" value="amphibian">
+    <label for="familyChoice4">Amphibian</label>
+
+    <input type="radio" id="familyChoice5"
+     name="family" value="reptile">
+    <label for="familyChoice5">Reptile</label>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+
+  <!--for drop down menu
+          <!- <label for="family" class="primary">Family</label>
+          <select id="family">
+            <option value="" disabled selected></option>
+            <option value="Mammal">Mammal</option>
+            <option value="Bird">Bird</option>
+            <option value="Fish">Fish</option>
+            <option value="Amphibian">Amphibian</option>
+            <option value="Reptile">Reptile</option>
+          </select> -->
+
+        </div>
+      </div>
+      <!-- <input type="submit" value="save"/> -->
+    </form>
+    <div>
+    <button id="delete-all">Delete All</button>
+    </div>
+    <h1>Animal List</h1>
+    <div id="animal-list"></div>
+    
+  </body>
+</html>
