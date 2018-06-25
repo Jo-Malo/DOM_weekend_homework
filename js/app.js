@@ -30,6 +30,40 @@ const createAnimalListItem = function (form) {
   return animalListItem;
 }
 
+
+
+
+function generate_table() {
+  var body = document.getElementsByTagName('body')[0];
+
+
+  var tbl = document.createElement('table');
+  var tblBody = document.createElement('tbody');
+  tblBody.classList.add('animal-list-item');
+
+
+  for (var i = 0; i < 1; i++) {
+    var row = document.createElement('tr');
+
+    for (var j = 0; j < 3; j++) {
+      var cell = document.createElement('td');
+      var cellText = document.createTextNode('bla');
+      cell.appendChild(cellText);
+      row.appendChild(cell);
+    }
+
+
+    tblBody.appendChild(row);
+  }
+
+  tbl.appendChild(tblBody);
+  body.appendChild(tbl);
+  tbl.setAttribute('border', '2');
+}
+
+
+
+
 const buildElement = function (tag, value) {
   const element = document.createElement(tag);
   element.textContent = value;
